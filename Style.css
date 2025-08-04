@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    padding: 10px;
+    font-family: sans-serif;
+    background-color: rgba(60, 60, 60, 0.868);
+}
+.container {
+    background-color: rgba(31, 28, 28, 0.677);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    min-width: 300px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.container #taskForm {
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 5px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#taskForm input[type="text"] {
+    flex: 1;
+    padding-left: 5px;
+    border: none;
+    margin-right: 10px; 
+    font-size: 1em;
+    font-weight: bold;
+    background: transparent;
+}
+    
+
+#taskForm input[type="text"]:focus {
+    outline: none;
+}
+#taskForm button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color:rgba(31, 28, 28, 0.886);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#taskForm button:hover {
+    background-color: rgba(22, 21, 21, 0.901);
+}
+
+#taskList {
+    list-style: none;
+    margin-top: 20px;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#taskList li i{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: color 0.3s, transform 0.3s;
+
+}
+#taskList li i:hover {
+    color: #FFD43B;
+    transform: scale(1.3);
+}
+
