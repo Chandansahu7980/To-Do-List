@@ -55,7 +55,7 @@ body {
 }
 
 #taskForm button {
-    padding: 10px 20px;
+    padding: 1em 1.5em;
     border: none;
     border-radius: 5px;
     background-color: rgba(31, 28, 28, 0.886);
@@ -73,24 +73,22 @@ body {
     margin-top: 20px;
 }
 
-
-
 #taskList li {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 7px;
     border-bottom: 1px solid #ccc;
 }
 
-#taskList li div{
+#taskList li div {
     display: flex;
     align-items: center;
     max-width: 90%;
 }
 
-#taskList li label{
+#taskList li label {
     cursor: pointer;
     text-transform: capitalize;
     text-align: left;
@@ -132,7 +130,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
 }
 
-#taskList li input[type="checkbox"]:checked + label {
+#taskList li input[type="checkbox"]:checked+label {
     text-decoration: line-through;
     color: rgba(255, 255, 255, 0.5);
 }
@@ -151,7 +149,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    body{
+    body {
         padding: 0px;
         background-color: rgb(31, 28, 28);
     }
@@ -163,18 +161,31 @@ body {
         box-shadow: none;
     }
 
-    #taskForm {
-        /* flex-direction: column; */
-        /* align-items: stretch; */
+    .container #taskForm {
         width: 100%;
     }
 
+    #taskForm button {
+        padding: 0.5em;
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 480px) {
     #taskForm input[type="text"] {
-        /* margin-bottom: 10px; */
-        /* width: 100%; */
+        font-size: 0.8em;
     }
 
     #taskForm button {
-        /* width: 100%; */
+        padding: 0.5em;
+        font-size: 0.6em;
+    }
+
+    #taskList li {
+        padding: 5px;
+    }
+
+    #taskList li label {
+        font-size: 0.8em;
     }
 }
