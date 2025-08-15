@@ -77,8 +77,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
-    padding-bottom: 7px;
+    padding: 1em;
+    padding-bottom: 0.6em;
     border-bottom: 1px solid #ccc;
 }
 
@@ -187,5 +187,6 @@ body {
 
     #taskList li label {
         font-size: 0.8em;
+        margin-left: 2em;
     }
 }
