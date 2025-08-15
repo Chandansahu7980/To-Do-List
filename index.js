@@ -44,8 +44,3 @@ document.getElementById('taskList').addEventListener('click', function (event) {
         li.remove();
     }
 });
-
-
-
-
-
