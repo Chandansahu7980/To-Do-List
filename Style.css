@@ -33,6 +33,8 @@ body{
     border-radius: 5px;
     width: 80%;
     margin: 0 auto;
+    position: sticky;
+    top: 10px;
 }
 
 #taskForm input[type="text"] {
