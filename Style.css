@@ -143,6 +143,29 @@ body {
     left: 0em;
 }
 
+.clear {
+    display: none;
+    /* position: absolute; */
+    cursor: pointer;
+    padding: 0.5em 1em;
+    background-color: rgba(31, 28, 28, 0.886);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 30%;
+    margin: 1em auto;
+    transition: all 0.5s ease;
+}
+
+.clear:hover {
+    background-color: rgba(22, 21, 21, 0.901);
+    color: #FFD43B;
+}
+.clear:hover i{
+    transform: scale(1.1);
+}
+
+
 @media screen and (max-width: 768px) {
     body {
         padding: 0px;
